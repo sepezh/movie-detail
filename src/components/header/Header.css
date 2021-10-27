@@ -1,0 +1,9 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: #bdbdbd;
+}
+
+.logo {
+  background-color: red;
+}
