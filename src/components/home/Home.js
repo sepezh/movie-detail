@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import {
   Grid,
   Card,
@@ -10,6 +10,7 @@ import {
   Button,
 } from "@mui/material";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const cards = [1, 2, 3, 4, 5, 6];
 
@@ -33,12 +34,14 @@ const Home = () => {
               />
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Film Name
+                  Movie Name
                 </Typography>
                 <Typography>year</Typography>
               </CardContent>
               <CardActions className="card-actions">
-                <Button size="small">View</Button>
+                <Button size="small">
+                  <Link to="/Movie">View</Link>
+                </Button>
               </CardActions>
             </Card>
           </Grid>

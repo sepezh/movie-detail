@@ -12,6 +12,8 @@ import PosterCarousel from "./components/postersCarousel/PostersCarousel";
 import Home from "./components/home/Home";
 import "./App.css";
 import Header from "./components/header/Header";
+import { Route, Switch } from "react-router-dom";
+import Movies from "./components/movies/Movies";
 
 function Copyright() {
   return (
@@ -45,7 +47,14 @@ const App = () => {
                 <PosterCarousel />
               </Container>
             </Box>
-            <Home />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/Movie">
+                <Movies />
+              </Route>
+            </Switch>
           </Grid>
           <Grid item sx={2} />
         </Grid>

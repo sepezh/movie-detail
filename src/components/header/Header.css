@@ -7,3 +7,15 @@
 .logo {
   background-color: red;
 }
+
+.carousel-status {
+  display: none;
+}
+
+.thumbs-wrapper.axis-vertical {
+  display: none;
+}
+
+.control-arrow.control-prev:active {
+  background-color: transparent;
+}
