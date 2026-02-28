@@ -55,7 +55,7 @@ export default function Movies() {
       <CardMedia
         component="img"
         sx={{ width: 1000, height: 500 }}
-        image="https://source.unsplash.com/random"
+        image="https://picsum.photos/1000/500"
         alt="Live from space album cover"
       />
     </Card>
